@@ -46,6 +46,7 @@ printf "\n\n" >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
 sleep 1
 
+echo "Getting Mongo ready ..." && sleep 30
 
 echo "-------------------------- MONGO LOAD BENCHMARK #1 --------------------------" >> OutputLoad.txt
 printf "\n\n" >> OutputLoad.txt
