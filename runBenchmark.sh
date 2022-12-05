@@ -121,9 +121,9 @@ printf "\n\n" >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
 sleep 1
 
-# docker stop `docker ps -qa`
-# docker rm `docker ps -qa`
-# docker rmi -f `docker images -qa `
-# docker volume rm $(docker volume ls -q)
+docker stop `docker ps -qa`
+docker rm `docker ps -qa`
+docker rmi -f `docker images -qa `
+docker volume rm $(docker volume ls -q)
 
 exit
