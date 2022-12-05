@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker-compose up -d && ./runBenchmark.sh
+docker-compose up -d && echo "Getting ready ..." && sleep 30 &&./runBenchmark.sh
