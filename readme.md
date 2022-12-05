@@ -1,6 +1,6 @@
 # Benchmark Script
 
-To run this script run the following command: ./start
+To run this script run the following command: ./start.sh
 
 ## Context
 
