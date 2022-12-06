@@ -14,37 +14,37 @@ echo "-------------------------- REDIS LOAD BENCHMARK #1 -----------------------
 printf "\n\n" >> OutputLoad.txt
 ./bin/ycsb.sh load redis -s -P workloads/workloada -p "redis.host=$redis_host" -p "redis.port=6379" -p "redis.cluster=true" >> OutputLoad.txt
 printf "\n\n" >> OutputLoad.txt
-sleep 1
+sleep 15
 
 echo "-------------------------- REDIS RUN BENCHMARK #1 --------------------------" >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
 ./bin/ycsb.sh run redis -s -P workloads/workloada -p "redis.host=$redis_host" -p "redis.port=6379" -p "redis.cluster=true" >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
-sleep 1
+sleep 15
 
 echo "-------------------------- REDIS LOAD BENCHMARK #2 --------------------------" >> OutputLoad.txt
 printf "\n\n" >> OutputLoad.txt
 ./bin/ycsb.sh load redis -s -P workloads/workloada -p "redis.host=$redis_host" -p "redis.port=6379" -p "redis.cluster=true" >> OutputLoad.txt
 printf "\n\n" >> OutputLoad.txt
-sleep 1
+sleep 15
 
 echo "-------------------------- REDIS RUN BENCHMARK #2 --------------------------" >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
 ./bin/ycsb.sh run redis -s -P workloads/workloada -p "redis.host=$redis_host" -p "redis.port=6379" -p "redis.cluster=true" >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
-sleep 1
+sleep 15
 
 echo "-------------------------- REDIS LOAD BENCHMARK #3 --------------------------" >> OutputLoad.txt
 printf "\n\n" >> OutputLoad.txt
 ./bin/ycsb.sh load redis -s -P workloads/workloada -p "redis.host=$redis_host" -p "redis.port=6379" -p "redis.cluster=true" >> OutputLoad.txt
 printf "\n\n" >> OutputLoad.txt
-sleep 1
+sleep 15
 
 echo "-------------------------- REDIS RUN BENCHMARK #3 --------------------------" >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
 ./bin/ycsb.sh run redis -s -P workloads/workloada -p "redis.host=$redis_host" -p "redis.port=6379" -p "redis.cluster=true" >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
-sleep 1
+sleep 15
 
 echo "Getting Mongo ready ..." && sleep 30
 
@@ -90,37 +90,37 @@ echo "-------------------------- AZURE COSMOS LOAD BENCHMARK #1 ----------------
 printf "\n\n" >> OutputLoad.txt
 ./bin/ycsb.sh load azurecosmos -P workloads/workloada -p azurecosmos.primaryKey=HkBtZtX7wv9Yw0sdhMWqpQsdvigRAeywG2yEId8sAtavffzqqxvIijxj5FQfrKUae7jEcT8IKuYUACDbGhsRMw== -p azurecosmos.uri=https://thierry-fortin.documents.azure.com:443/ -p azurecosmos.useUpsert=true >> OutputLoad.txt
 printf "\n\n" >> OutputLoad.txt
-sleep 1
+sleep 20
 
 echo "-------------------------- AZURE COSMOS RUN BENCHMARK #1 --------------------------" >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
 ./bin/ycsb.sh run azurecosmos -P workloads/workloada -p azurecosmos.primaryKey=HkBtZtX7wv9Yw0sdhMWqpQsdvigRAeywG2yEId8sAtavffzqqxvIijxj5FQfrKUae7jEcT8IKuYUACDbGhsRMw== -p azurecosmos.uri=https://thierry-fortin.documents.azure.com:443/ -p azurecosmos.useUpsert=true >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
-sleep 1
+sleep 20
 
 echo "-------------------------- AZURE COSMOS LOAD BENCHMARK #2 --------------------------" >> OutputLoad.txt
 printf "\n\n" >> OutputLoad.txt
 ./bin/ycsb.sh load azurecosmos -P workloads/workloada -p azurecosmos.primaryKey=HkBtZtX7wv9Yw0sdhMWqpQsdvigRAeywG2yEId8sAtavffzqqxvIijxj5FQfrKUae7jEcT8IKuYUACDbGhsRMw== -p azurecosmos.uri=https://thierry-fortin.documents.azure.com:443/ -p azurecosmos.useUpsert=true >> OutputLoad.txt
 printf "\n\n" >> OutputLoad.txt
-sleep 1
+sleep 20
 
 echo "-------------------------- AZURE COSMOS RUN BENCHMARK #2 --------------------------" >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
 ./bin/ycsb.sh run azurecosmos -P workloads/workloada -p azurecosmos.primaryKey=HkBtZtX7wv9Yw0sdhMWqpQsdvigRAeywG2yEId8sAtavffzqqxvIijxj5FQfrKUae7jEcT8IKuYUACDbGhsRMw== -p azurecosmos.uri=https://thierry-fortin.documents.azure.com:443/ -p azurecosmos.useUpsert=true >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
-sleep 1
+sleep 20
 
 echo "-------------------------- AZURE COSMOS LOAD BENCHMARK #3 --------------------------" >> OutputLoad.txt
 printf "\n\n" >> OutputLoad.txt
 ./bin/ycsb.sh load azurecosmos -P workloads/workloada -p azurecosmos.primaryKey=HkBtZtX7wv9Yw0sdhMWqpQsdvigRAeywG2yEId8sAtavffzqqxvIijxj5FQfrKUae7jEcT8IKuYUACDbGhsRMw== -p azurecosmos.uri=https://thierry-fortin.documents.azure.com:443/ -p azurecosmos.useUpsert=true >> OutputLoad.txt
 printf "\n\n" >> OutputLoad.txt
-sleep 1
+sleep 20
 
 echo "-------------------------- AZURE COSMOS RUN BENCHMARK #3 --------------------------" >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
 ./bin/ycsb.sh run azurecosmos -P workloads/workloada -p azurecosmos.primaryKey=HkBtZtX7wv9Yw0sdhMWqpQsdvigRAeywG2yEId8sAtavffzqqxvIijxj5FQfrKUae7jEcT8IKuYUACDbGhsRMw== -p azurecosmos.uri=https://thierry-fortin.documents.azure.com:443/ -p azurecosmos.useUpsert=true >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
-sleep 1
+sleep 20
 
 docker stop `docker ps -qa`
 docker rm `docker ps -qa`
