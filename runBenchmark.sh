@@ -127,4 +127,7 @@ docker rm `docker ps -qa`
 docker rmi -f `docker images -qa `
 docker volume rm $(docker volume ls -q)
 
+cd ..
+sudo rm -r data
+
 exit
