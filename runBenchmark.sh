@@ -52,37 +52,37 @@ echo "-------------------------- MONGO LOAD BENCHMARK #1 -----------------------
 printf "\n\n" >> OutputLoad.txt
 ./bin/ycsb.sh load mongodb -s -P workloads/workloada -p recordcount=1000 -p mongodb.upsert=true -p mongodb.url=mongodb://mongo1:30001,mongo2:30002,mongo3:30003,mongo4:30004,mongo5:30005,mongo6:30006/?replicaSet=my-replica-set >> OutputLoad.txt
 printf "\n\n" >> OutputLoad.txt
-sleep 1
+sleep 15
 
 echo "-------------------------- MONGO RUN BENCHMARK #1 --------------------------" >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
 ./bin/ycsb.sh run mongodb -s -P workloads/workloada -p recordcount=1000 -p mongodb.upsert=true -p mongodb.url=mongodb://mongo1:30001,mongo2:30002,mongo3:30003,mongo4:30004,mongo5:30005,mongo6:30006/?replicaSet=my-replica-set >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
-sleep 1
+sleep 15
 
 echo "-------------------------- MONGO LOAD BENCHMARK #2 --------------------------" >> OutputLoad.txt
 printf "\n\n" >> OutputLoad.txt
 ./bin/ycsb.sh load mongodb -s -P workloads/workloada -p recordcount=1000 -p mongodb.upsert=true -p mongodb.url=mongodb://mongo1:30001,mongo2:30002,mongo3:30003,mongo4:30004,mongo5:30005,mongo6:30006/?replicaSet=my-replica-set >> OutputLoad.txt
 printf "\n\n" >> OutputLoad.txt
-sleep 1
+sleep 15
 
 echo "-------------------------- MONGO RUN BENCHMARK #2 --------------------------" >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
 ./bin/ycsb.sh run mongodb -s -P workloads/workloada -p recordcount=1000 -p mongodb.upsert=true -p mongodb.url=mongodb://mongo1:30001,mongo2:30002,mongo3:30003,mongo4:30004,mongo5:30005,mongo6:30006/?replicaSet=my-replica-set >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
-sleep 1
+sleep 15
 
 echo "-------------------------- MONGO LOAD BENCHMARK #3 --------------------------" >> OutputLoad.txt
 printf "\n\n" >> OutputLoad.txt
 ./bin/ycsb.sh load mongodb -s -P workloads/workloada -p recordcount=1000 -p mongodb.upsert=true -p mongodb.url=mongodb://mongo1:30001,mongo2:30002,mongo3:30003,mongo4:30004,mongo5:30005,mongo6:30006/?replicaSet=my-replica-set >> OutputLoad.txt
 printf "\n\n" >> OutputLoad.txt
-sleep 1
+sleep 15
 
 echo "-------------------------- MONGO RUN BENCHMARK #3 --------------------------" >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
 ./bin/ycsb.sh run mongodb -s -P workloads/workloada -p recordcount=1000 -p mongodb.upsert=true -p mongodb.url=mongodb://mongo1:30001,mongo2:30002,mongo3:30003,mongo4:30004,mongo5:30005,mongo6:30006/?replicaSet=my-replica-set >> OutputRun.txt
 printf "\n\n" >> OutputRun.txt
-sleep 1
+sleep 15
 
 
 
